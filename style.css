@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, black, #153152);
+    color: white;
+}
+
+.title::before {
+    content: "🚀 ";
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* image */
+/* .image {
+    text-align: right !important;
+    margin: 40px 0;
+}
+
+.image img {
+    mask : right middle;
+    height: 200px;
+    animation: float 3s ease-in-out infinite;
+} */
+
+/* Card */
+.main-section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/* LEFT SIDE IMAGE */
+.left img {
+    width: 400px;
+    max-width: 100%;
+}
+
+/* RIGHT SIDE CARD */
+.right {
+    display: flex;
+    justify-content: center;
+}
+
+/* Keep your existing card styling */
+.card {
+    background: linear-gradient(to left, #5bcff6, #243b55);
+    color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+.left img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Result */
+#result {
+    margin-top: 20px;
+}
+
+/* Skill Tags */
+.skill {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* Loader */
+#loader {
+    margin: 20px auto;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #ff2b72;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar {
+    background: black;
+    padding: 10px;
+    text-align: right;
+}
+
+.navbar a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
