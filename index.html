@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> AI Resume Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/">🏠Home</a>
+    <a href="/about">📑About</a>
+    <a href="/contact">📞Contact</a>
+</div>
+
+<div class="hero">
+    <h1 class="title">AI Resume Analyzer</h1>
+    <h2>Analyze your resume using Artificial Intelligence</h2>
+    
+</div>
+
+<!-- <div class="image">
+    <img src="static\resume analyzer image 1.avif" width="200">
+
+</div> -->
+<div class="main-section">
+
+    <!-- LEFT SIDE (Image) -->
+    <div class="left">
+        <img src="/static/intro-mobile_2.png" width="400">
+    </div>
+
+    <!-- RIGHT SIDE (Card) -->
+    <div class="right">
+        <div class="card">
+            <h2>Upload Your Resume</h2>
+
+            <input type="file" id="resume">
+            <button onclick="uploadResume()">Analyze Now</button>
+
+            <div id="loader" class="hidden"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+</body>
+</html>
