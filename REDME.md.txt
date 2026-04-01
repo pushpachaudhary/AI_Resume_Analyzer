@@ -1,0 +1,13 @@
+# AI Resume Analyzer 🚀
+
+An AI-based web application that analyzes resumes and gives skill insights and suggestions.
+
+## Tech Stack
+- Flask
+- Python
+- HTML, CSS, JS
+
+## Features
+- Resume upload
+- Skill extraction
+- Score generation
